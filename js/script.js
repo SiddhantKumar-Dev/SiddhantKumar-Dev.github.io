@@ -24,7 +24,7 @@ import { getDatabase, ref, onValue } from "https://www.gstatic.com/firebasejs/10
 // const { getDatabase } = require("https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js");
 
 
-var map = L.map('map').setView([20.593, 78.9629], 5.5);
+var map = L.map('map').setView([20.593, 79.9629], 5);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
@@ -38,6 +38,10 @@ const app = initializeApp(appSettings)
 var database = getDatabase(app);
 // Reference to the data you want to retrieve (replace 'coordinates' with your actual database path)
 const coordinatesRef = ref(database, 'newData2');
+const totalScansLabel = document.getElementById('total-scans');
+
+// Now, you can manipulate the label or its content as needed
+// For example, changing the text of the label:
 
 
 // Initialize the map (as shown in the previous code)
@@ -68,6 +72,7 @@ onValue(coordinatesRef, function(snapshot){
     
     let arrayVal = Object.values(snapshot.val())
     console.log(arrayVal);
+    totalScansLabel.querySelector('p').textContent = arrayVal[0].length.toString();
     for(let i = 0; i<arrayVal[0].length; i++){
         // console.log(arrayVal[0][3].lat);
         let lat = arrayVal[0][i].lat;
