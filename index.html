@@ -1,246 +1,51 @@
-<!DOCTYPE HTML>
-<!--
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Siddhant Kumar</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USA Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+     <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    
+    <link rel="stylesheet" href="css/style.css">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+</head>
+<body>
+    <!-- <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-analytics.js";
+        import { getDatabase } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js";
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<span class="icon solid major style2 fa-code"></span>
-
-						<!-- <span class="logo"><img src="images/logo.svg" alt="" /></span> -->
-						<h1>Hi! I'm Siddhant Kumar</h1>
-					</header>
-
-				<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<li><a href="#intro" class="active">Introduction</a></li>
-							<li><a href="#first">Skills</a></li>
-							<li><a href="#second">Experience</a></li>
-							<li><a href="#third">Projects</a></li>
-
-							<li><a href="#cta">Contact Me</a></li>
-						</ul>
-					</nav>
-
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Introduction -->
-							<section id="intro" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>About Me</h2>
-										</header>
-										<p>Hi! My name is Siddhant Kumar and I'm a freshman at the University of California, San Diego majoring in Computer Science.
-											</p>
-										<ul class="actions">
-											<!-- <li><a href="generic.html" class="button">Learn More</a></li> -->
-										</ul>
-									</div>
-									<span class="image"><img src="images/siddhant_portrait copy.jpg" alt="" /></span>
-								</div>
-							</section>
-
-						<!-- First Section -->
-							<section id="first" class="main special">
-								<header class="major">
-									<h2>Skills</h2>
-								</header>
-								<ul class="">
-									<p>I am a strong teamworker, and love engaging in and learning new technologies. Here are some that I know right now:</p>
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyDhPLy47Rao5NIzxIU5vpWsIvQDCS1W7kw",
+          authDomain: "scanmilk-2f9a8.firebaseapp.com",
+          databaseURL: "https://scanmilk-2f9a8-default-rtdb.firebaseio.com",
+          projectId: "scanmilk-2f9a8",
+          storageBucket: "scanmilk-2f9a8.appspot.com",
+          messagingSenderId: "1005488097592",
+          appId: "1:1005488097592:web:ae9f0be79f9245591219cd",
+          measurementId: "G-YDCR4EJCMN"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+        const database = getDatabase(app);
+      </script> -->
 
 
-										<!-- <span class="icon solid major style1 fa-code"></span> -->
-										<p>
-											<b>Advanced</b>: Swift, Python, Java
-											<br><b>Intermediate</b>: Neural Networks, HTML5, CSS, JavaScript, Algorithms, Data Structures, Object Oriented Design/Programming
-											<br><b>Basic</b>: LaTeX
-
-											</p>
-
-
-								</ul>
-								<footer class="major">
-									<ul class="actions special">
-										<!-- <li><a href="generic.html" class="button">Learn More</a></li> -->
-									</ul>
-								</footer>
-							</section>
-
-						<!-- Second Section -->
-							<section id="second" class="main special">
-								<header class="major">
-									<h2>Experience</h2>
-									<p>Here is more information about my experiences and education:</p>
-								</header>
-
-								<div class="box alt container">
-									<section class="feature right">
-
-										<div class="content">
-											<h3><b>Research on Artificial Intelligence Applications for Protein Folding Models</b> <br><i>october 2020 - june 2021</i></h3>
-											<p>Working with Professor Prabakaran on the protein folding problem. We are using Google’s
-												AlphaFold to estimate how proteins fold, allowing for a better understanding of the effects
-												of certain proteins and diseases which will enable the creation of better medication.</p>
-										</div>
-									</section>
-									<section class="feature left">
-
-										<div class="content">
-											<h3><b>Neuroleap Corp. — Machine Learning/iOS Development Intern</b> <br><i>january 2020 - july 2021</i></h3>
-											<p>Neuroleap is an artificial intelligence (AI) based company that focuses on
-												using AI to allow kids with learning disabilities to be diagnosed and to learn
-												more efficiently at their own pace. I was assigned to update the existing application
-												and create a brand new application for the optical learning platform. I changed
-												all the source code of the application to make it run on the most recent version
-												of swift (swift 5), through this process I fixed all the bugs that came up and now
-												the application has been deployed and is in use. As a machine learning intern, we used
-												OpenCV and Tensorflow to predict what letter a child is writing in the air and to analyze
-												the child’s movements and facial features. Through this analysis educators will be able
-												to recognize symptoms of dyslexia, tourette's syndrome, down syndrome and more.</p>
-										</div>
-									</section>
-									<section class="feature right">
-										<!-- <a href="#" class="image"><img src="images/pic031.jpg" alt="" /></a> -->
-										<div class="content">
-											<h3><b>Let'sEat — Marketing and Development Intern</b> <br><i>september 2017 - november 2017</i></h3>
-											<p>Let’sEat is a food delivery platform. As the marketing and development intern I was tasked with
-												understanding the potential of expanding the application and adding high school students and
-												teenagers as part of the target audience. I helped by taking multiple surveys from students at my
-												school. I was working closely with the CEO and co-founders on a daily basis to discuss the potential
-												of collaborating with other companies.</p>
-										</div>
-									</section>
-								</div>
-
-
-							</section>
-
-
-							<!-- Second Section -->
-								<section id="third" class="main special">
-									<header class="major">
-										<h2>Projects</h2>
-										<p>Here is more information about my projects:</p>
-									</header>
-
-									<div class="box alt container">
-
-										<section class="feature right">
-											<!-- <a href="#" class="image"><img src="images/pic031.jpg" alt="" /></a> -->
-											<div class="content">
-												<h3><b>GeoGood News (In Progress)</b> <br><i>https://www.geogoodnews.com</i></h3>
-												<p>GeoGoodNews is an ongoing research project which scrapes news from
-													different news channels and using an Artificial Intelligence model
-													it classifies the news into different categories and displays them as good, moderate,
-													and bad. This project was started when the COVID-19 pandemic hit the United States
-													and I wanted to create a project that enabled people to see all the good still happening
-													in the world.</p>
-											</div>
-										</section>
-
-
-										<section class="feature right">
-
-											<div class="content">
-												<h3><b>MVBells2</b> <br><i>https://apps.apple.com/us/app/mvbells-2/id1434510318</i></h3>
-												<p>MVBells2 is an interactive schedule application that was made
-													to allow students to be aware of when their classes are going to
-													end and when the next one is going to start. It comes with a planner
-													that will allow students to easily keep track of all their assignments.</p>
-											</div>
-										</section>
-										<section class="feature left">
-
-											<div class="content">
-												<h3><b>MVOctagon</b> <br><i>https://apps.apple.com/us/app/mvoctagon/id1473553558</i></h3>
-												<p>MVOctagon is an application for Monta Vista High School’s Octagon
-													Volunteering club. The application was made to solve the problem of
-													 people signing up for events, not showing up, but still getting the
-													 hours. The app has a built-in location tracker to see if people are
-													 near the volunteer location during  the check in and check out times,
-													 as this will serve as proof of volunteering. Furthermore, the app
-													 will keep track of everyone’s volunteer hours and all completed events.
-													 For this application I was interviewed and featured in our schools award
-													 winning magazine.</p>
-											</div>
-										</section>
-										<section class="feature right">
-											<!-- <a href="#" class="image"><img src="images/pic031.jpg" alt="" /></a> -->
-											<div class="content">
-												<h3><b>MVLEO</b> <br><i>https://apps.apple.com/us/app/mvleo/id1480649897</i></h3>
-												<p>MVLEO is an application for Monta Vista High School’s LEO Volunteering
-													Club. The application is connected to the LEO website and ports the
-													functionality of the website over to a mobile platform. It allows users to
-													see their volunteer hours, and any upcoming activities. Furthermore, they
-													can sign up for events that they are interested in.
-</p>
-											</div>
-										</section>
-
-										<section class="feature right">
-											<!-- <a href="#" class="image"><img src="images/pic031.jpg" alt="" /></a> -->
-											<div class="content">
-												<h3><b>MVFBLA</b> <br><i>https://apps.apple.com/sn/app/mvfbla/id1505263955</i></h3>
-												<p>MVFBLA is an application that allows all members to be counted for attendance
-													very quickly and easily when going to meetings, and it will allow officers
-													and participants to get information about each competition so they know what
-													they are signing up for. The application also allows all officers to effectively
-													take control of their FBLA chapter through the application.</p>
-											</div>
-										</section>
-
-
-									</div>
-
-
-								</section>
-
-						<!-- Get Started -->
-							<section id="cta" class="main special">
-								<header class="major">
-									<h2>Contact Me!</h2>
-									<p>Feel free to reach me at: <br> sid625@gmail.com</p>
-								</header>
-
-							</section>
-
-					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-
-
-						</section>
-					</footer>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+    <div id="map"></div>
+    <script src="js/script.js" type="module"></script>
+</body>
 </html>
